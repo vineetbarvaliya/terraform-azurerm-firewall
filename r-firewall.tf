@@ -6,7 +6,7 @@ resource "azurerm_public_ip" "firewall_public_ip" {
   sku                 = local.public_ip_sku
 
   tags = merge(local.default_tags, var.extra_tags)
-} Test
+} 
 
 module "azure-network-subnet" {
   source               = "claranet/subnet/azurerm"
